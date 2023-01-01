@@ -2,10 +2,10 @@
 name: Ping Index OneDrive
 
 on:
-  workflow_dispatch:
   schedule:
-    # Runs "at minute 55 past every hour" (see https://crontab.guru)
-    - cron: '* 1 * * *'
+    - cron: "* 1 * * *"
+  workflow_dispatch:
+    
 jobs:
   build:
     name: Ping Web
