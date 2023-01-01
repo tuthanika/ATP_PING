@@ -1,11 +1,12 @@
-# .github/workflows/scheduled-builds.yml
 name: Ping Index OneDrive
-
 on:
   schedule:
     - cron: "* 1 * * *"
   workflow_dispatch:
-    
+  
+defaults:
+  run:
+    shell: bash
 jobs:
   build:
     name: Ping Web
