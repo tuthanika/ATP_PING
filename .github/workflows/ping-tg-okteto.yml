@@ -1,11 +1,13 @@
 # .github/workflows/scheduled-builds.yml
 name: Ping Bot Okteto
-
 on:
-  workflow_dispatch:
   schedule:
-    # Runs "at minute 55 past every hour" (see https://crontab.guru)
-    - cron: '5 * * * *'
+    - cron: "5 * * * *"
+  workflow_dispatch:
+  
+defaults:
+  run:
+    shell: bash
 jobs:
   build:
     name: Ping Web
