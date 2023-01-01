@@ -19,4 +19,14 @@ jobs:
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-80-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-81-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-8080-tuthanika.cloud.okteto.net
+           
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 0
+          delete_workflow_pattern: Ping Bot Okteto
+
         
