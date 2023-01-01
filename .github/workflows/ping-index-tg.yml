@@ -16,5 +16,13 @@ jobs:
       # run: curl -X POST -d {} url
         run: |
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://Tg-Indexer.tuthanika.repl.co
- 
+            
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 0
+          delete_workflow_pattern: Ping Index TG
         
