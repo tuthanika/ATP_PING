@@ -1,12 +1,10 @@
 name: Ping Index OneDrive
+
 on:
-  schedule:
-    - cron: "* 1 * * *"
   workflow_dispatch:
-  
-defaults:
-  run:
-    shell: bash
+  schedule:
+    - cron: '* 1 * * *'
+    
 jobs:
   build:
     name: Ping Web
