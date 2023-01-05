@@ -11,15 +11,21 @@ jobs:
     name: Ping Web
     runs-on: ubuntu-latest
     steps:
-      - name: cURL request
-        # Hit the webhook endpoint to rebuild  from the "main" branch
-      # run: curl -X POST -d {} https://clonebot-tuthanika.cloud.okteto.net
+      - name: Bot TG-CloneBot_V2
+	    #run: curl -X POST -d {} https://clonebot-tuthanika.cloud.okteto.net
+        run: curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://clonebot-tuthanika.cloud.okteto.net
+		
+      - name: Bot TG ATP-Rclone-Mirror
         run: |
-           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://clonebot-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-80-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-81-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-8080-tuthanika.cloud.okteto.net
-           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://e5renewx-tuthanika.cloud.okteto.net
+
+      - name: ms365_e5_x
+        run: curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://e5renewx-tuthanika.cloud.okteto.net
+
+      - name: ATP_aapanel
+        run: |
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-80-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-7800-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-888-tuthanika.cloud.okteto.net
@@ -34,5 +40,3 @@ jobs:
           retain_days: 3
           keep_minimum_runs: 0
           delete_workflow_pattern: Ping Bot Okteto
-
-        
