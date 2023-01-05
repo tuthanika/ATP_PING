@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Bot TG-CloneBot_V2
-	    #run: curl -X POST -d {} https://clonebot-tuthanika.cloud.okteto.net
+        #run: curl -X POST -d {} https://clonebot-tuthanika.cloud.okteto.net
         run: curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://clonebot-tuthanika.cloud.okteto.net
-		
+
       - name: Bot TG ATP-Rclone-Mirror
         run: |
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-80-tuthanika.cloud.okteto.net
