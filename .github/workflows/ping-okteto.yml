@@ -1,5 +1,5 @@
 # .github/workflows/scheduled-builds.yml
-name: Ping Okteto
+name: Ping Bot Okteto
 
 on:
   workflow_dispatch:
