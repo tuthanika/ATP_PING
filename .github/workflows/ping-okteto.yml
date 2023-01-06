@@ -29,8 +29,8 @@ jobs:
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-80-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-7800-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-888-tuthanika.cloud.okteto.net
-           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-443-tuthanika.cloud.okteto.net
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-22-tuthanika.cloud.okteto.net
+           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://aapanel-tuthanika.cloud.okteto.net
             
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
