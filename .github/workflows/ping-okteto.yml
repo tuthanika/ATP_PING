@@ -22,7 +22,9 @@ jobs:
            curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://app-8080-tuthanika.cloud.okteto.net
 
       - name: ms365_e5_x
-        run: curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://e5renewx-tuthanika.cloud.okteto.net
+        run: | 
+           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://nginx-tuthanika.cloud.okteto.net
+           curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:101.0) Gecko/20100101 Firefox/101.0" -v https://e5o-tuthanika.cloud.okteto.net
 
       - name: ATP_aapanel
         run: |
