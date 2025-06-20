@@ -3,6 +3,7 @@ name: Sync Gitlab Old
 on:
   #- push
   #- delete
+  workflow_dispatch:
 
 jobs:
   merge-upstream:
